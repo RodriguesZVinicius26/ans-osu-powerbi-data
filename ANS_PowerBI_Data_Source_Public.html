@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ANS OSU - Power BI Data Source (Public, Pseudonymized)</title>
+<style>
+body { font-family: Calibri, Arial, sans-serif; margin: 24px; color: #222; }
+h1 { color: #1F4E79; }
+h2 { color: #2E75B6; margin-top: 40px; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 24px; font-size: 13px; }
+caption { caption-side: top; text-align: left; font-weight: bold; padding: 6px 0; }
+th, td { border: 1px solid #B7C6D9; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #D9E2F3; }
+tr:nth-child(even) td { background: #F5F8FC; }
+p.note { background: #FFF2CC; padding: 10px 14px; border: 1px solid #E6C200; }
+</style>
+</head>
+<body>
+<h1>ANS Ohio State - Power BI Web Data Source (Public / Pseudonymized)</h1>
+<p><strong>This is the public-hosting copy.</strong> The "Member ID" column contains pseudonymous codes
+(M001, M002, ...) instead of real OSU buckeye IDs. The mapping is consistent across all four tables below, so
+relationships between tables in Power BI still work correctly — only the real identifier is withheld from this
+publicly reachable page. All other cleanup from the Power BI Service Reporting Guide (Section 2.3) has been
+applied: Timestamp reformatted to <code>YYYY-MM-DD HH:MM:SS</code>, Event Name / Event Date added to the two
+event-specific forms, ambiguous headers renamed, and the OpenMC consent header shortened.</p>
+<p class="note"><strong>For Power BI's Get Data &rarr; Web connector:</strong> point it at this page's published
+GitHub Pages URL once deployed. Each of the four tables below will appear as a separate selectable table in the
+Navigator pane.</p>
+
+<h2 id="feedback-form">ANS Feedback Form (cleaned, pseudonymized)</h2>
+<table id="feedback-form-table" border="1">
+<caption>ANS Feedback Form (cleaned, pseudonymized)</caption>
+<thead><tr><th>Timestamp</th><th>Member ID</th><th>Advertising - Worked Well</th><th>Advertising - Did Not Work Well</th><th>Reason - Advertising Preference</th><th>Event Types Wanted MORE Of</th><th>Event Types Wanted LESS Of</th><th>Reason - Event Type Preference</th><th>Speaker Requests</th><th>New Event Type Suggestions</th><th>General Feedback</th><th>Favorite Event (All-Time)</th><th>Reason - Favorite Event</th></tr></thead>
+<tbody>
+<tr><td>2026-07-01 12:25:47</td><td>M018</td><td>Monthly newsletter;Social media;ANS event reminder email</td><td>Flyers in Scott Lab/CBEC</td><td>Flyers need to be put out earlier </td><td>Speaker from the Industry;Speaker from the Military;Volunteer</td><td>N/A</td><td>Volunteer opportunities not only bring members together but the community too and get more people interested in nuclear</td><td>Not that I can think of</td><td>Not that I can think of</td><td>No</td><td>The ANS and AFIT Symposium </td><td>More research focused and connected AND with another org</td></tr>
+<tr><td>2026-07-01 12:34:55</td><td>M046</td><td>Monthly newsletter;Social media;ANS event reminder email</td><td>Carmen post;In-class announcement</td><td>Was never added to Carmen course!</td><td>Speaker from the Industry;Social</td><td>Speaker from the Military</td><td>I feel that we already hear so much about academia from professors, but not enough about the path right into industry.</td><td></td><td></td><td></td><td>Power Plant tours 😋</td><td></td></tr>
+<tr><td>2026-07-01 18:10:37</td><td>M012</td><td>Monthly newsletter;Flyers in Scott Lab/CBEC;Social media</td><td>ANS event reminder email;ANS calendar</td><td>I get enough emails as is </td><td>Speaker from Academia;Speaker from the Industry;Speaker from the Military;Social</td><td>N/A</td><td>I love all events </td><td>Obama </td><td>More tours </td><td></td><td>I really liked the ice cream social. It was right at the beginning of the school year when I was new to campus and helped me meet a lot of people. </td><td></td></tr>
+<tr><td>2026-07-04 05:42:12</td><td>M041</td><td>Flyers in Scott Lab/CBEC;ANS calendar;In-class announcement</td><td>Carmen post;Social media</td><td>Chosen based on where I usually get information regarding events.</td><td>Speaker from Academia;Speaker from the Industry;Social</td><td>N/A</td><td>Part of my reason for engaging with events comes from wanting to learning skills for industrial applications and networking in industry.</td><td></td><td>Applicational workshops for industry</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+<h2 id="interest-form">ANS Interest Form (cleaned, pseudonymized)</h2>
+<table id="interest-form-table" border="1">
+<caption>ANS Interest Form (cleaned, pseudonymized)</caption>
+<thead><tr><th>Timestamp</th><th>Member ID</th><th>Major</th><th>Minor</th><th>Events Wanted More Of</th><th>Mailing List Opt-In</th><th>Referral Source</th></tr></thead>
+<tbody>
+<tr><td>2025-02-19 14:58:40</td><td>M033</td><td>Materials Science Engineering</td><td></td><td>Not too sure!</td><td>Yes!</td><td>Class announcement</td></tr>
+<tr><td>2025-03-05 11:02:52</td><td>M001</td><td>Chemical Engineering</td><td>Nuclear Engineering</td><td>Not too sure!</td><td>Yes!</td><td>ANS event reminder email</td></tr>
+<tr><td>2025-03-05 15:18:25</td><td>M032</td><td>Mechanical Engineering</td><td>Nuclear Engineering;Robotics</td><td>Not too sure!</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-03-21 14:55:53</td><td>M050</td><td>Chemical Engineering</td><td>Nuclear Engineering</td><td>Not too sure!</td><td>Yes!</td><td>Online</td></tr>
+<tr><td>2025-04-10 09:27:01</td><td>M004</td><td>Mechanical Engineering</td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Flyers in Scott Lab/CBEC</td></tr>
+<tr><td>2025-04-10 19:03:57</td><td>M043</td><td>Aerospace Engineering</td><td>Nuclear Engineering</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Flyers in Scott Lab/CBEC</td></tr>
+<tr><td>2025-04-10 20:55:14</td><td>M013</td><td>Chemistry</td><td></td><td>Not too sure!</td><td>Yes!</td><td>Scouring OSU Student Activities lol</td></tr>
+<tr><td>2025-04-19 20:09:11</td><td>M053</td><td>Nuclear Engineering PhD</td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Flyers in Scott Lab/CBEC</td></tr>
+<tr><td>2025-04-20 13:54:52</td><td>M001</td><td>Chemical Engineering</td><td>Nuclear Engineering</td><td>Social Mixers</td><td>Yes!</td><td>Social media</td></tr>
+<tr><td>2025-04-27 06:49:51</td><td>M061</td><td>Electrical Engineering</td><td>Nuclear Engineering;Computer science</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>OSU student organizations page</td></tr>
+<tr><td>2025-05-20 18:43:14</td><td>M048</td><td>Mechanical Engineering</td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Activities</td></tr>
+<tr><td>2025-06-25 02:00:39</td><td>M053</td><td>Nuclear Eng. PHD</td><td></td><td>Not too sure!</td><td>Yes!</td><td>Friend/Professor</td></tr>
+<tr><td>2025-08-24 17:03:54</td><td>M010</td><td>Mechanical Engineering</td><td></td><td>Not too sure!</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-24 17:10:04</td><td>M025</td><td>Engineering Physics</td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-24 17:47:33</td><td>M018</td><td>Chemistry</td><td>Nuclear Engineering</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-24 18:07:01</td><td>M012</td><td>Mechanical Engineering</td><td>Nuclear Engineering</td><td>Social Mixers</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-24 18:10:08</td><td>M030</td><td>Chemistry</td><td>Nuclear Engineering</td><td>Not too sure!</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-24 18:14:22</td><td>M038</td><td>Computer Science and Engineering</td><td></td><td>Not too sure!</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-24 20:17:45</td><td>M044</td><td>Chemical Engineering</td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-24 21:44:38</td><td>M013</td><td>Chemistry</td><td>Nuclear Engineering</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-25 10:16:00</td><td>M047</td><td>Mechanical Engineering</td><td>Math</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>No</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-25 10:28:51</td><td>M052</td><td>Engineering Physics</td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-25 13:23:49</td><td>M009</td><td>Chemical Engineering</td><td></td><td>Career Seminars</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-25 15:24:06</td><td>M019</td><td>Computer Science and Engineering</td><td>None atm</td><td>Not too sure!</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-25 16:19:14</td><td>M059</td><td>Chemical Engineering</td><td>Nuclear Engineering</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-26 12:40:33</td><td>M040</td><td>Computer Science and Engineering</td><td></td><td>Social Mixers</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-26 16:01:59</td><td>M060</td><td>Aerospace Engineering</td><td>Nuclear Engineering</td><td>Not too sure!</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-26 18:00:32</td><td>M057</td><td>Physics</td><td>Nuclear Engineering</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-26 20:08:08</td><td>M058</td><td>Environmental Engineering</td><td>French</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-26 21:23:52</td><td>M062</td><td>Mechanical Engineering</td><td>Nuclear Engineering</td><td>Not too sure!</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-26 22:17:10</td><td>M007</td><td>Chemical Engineering</td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-08-28 19:21:32</td><td>M027</td><td>Physics</td><td>Math</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-09-02 23:03:01</td><td>M008</td><td>Physics</td><td>Math</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-09-04 16:56:55</td><td>M003</td><td>Chemical Engineering</td><td>Nuclear Engineering;Spanish</td><td>Not too sure!</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-09-05 12:24:32</td><td>M055</td><td>Aerospace Engineering</td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Friend/Professor</td></tr>
+<tr><td>2025-09-08 15:24:11</td><td>M054</td><td>Chemical Engineering</td><td>Nuclear Engineering</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student org lookup</td></tr>
+<tr><td>2025-09-23 22:38:50</td><td>M023</td><td>Mechanical Engineering</td><td>Robotics</td><td>Career Seminars</td><td>Yes!</td><td>Friend/Professor</td></tr>
+<tr><td>2025-09-26 22:19:09</td><td>M042</td><td>Engineering Physics</td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Social media</td></tr>
+<tr><td>2025-09-29 11:12:04</td><td>M021</td><td>Mechanical Engineering</td><td>Nuclear Engineering</td><td>Not too sure!</td><td>Yes!</td><td>Social media</td></tr>
+<tr><td>2025-09-30 20:37:25</td><td>M049</td><td>Mechanical Engineering</td><td></td><td>ALL</td><td>Yes!</td><td>Actual event</td></tr>
+<tr><td>2025-10-01 12:13:07</td><td>M039</td><td>Biomedical engineering </td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Flyers in Scott Lab/CBEC</td></tr>
+<tr><td>2025-10-06 16:50:59</td><td>M034</td><td>Electrical Engineering</td><td></td><td>Not too sure!</td><td>Yes!</td><td>linktree</td></tr>
+<tr><td>2025-10-08 20:40:29</td><td>M037</td><td>Computer Science and Engineering</td><td>Chinese</td><td>Not too sure!</td><td>Yes!</td><td>Friend/Professor</td></tr>
+<tr><td>2025-10-29 14:59:33</td><td>M016</td><td>Mechanical Engineering</td><td>Nuclear Engineering</td><td>Not too sure!</td><td>Yes!</td><td>ANS event reminder email</td></tr>
+<tr><td>2025-10-29 15:03:12</td><td>M063</td><td>Mechanical Engineering</td><td>Nuclear Engineering</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-10-29 15:03:13</td><td>M029</td><td>Mechanical Engineering</td><td>Nuclear Engineering</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-10-29 15:08:59</td><td>M020</td><td>Physics</td><td></td><td>Social Mixers</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2025-10-30 12:57:34</td><td>M005</td><td>Mechanical Engineering</td><td>Nuclear Engineering;Music</td><td>Career Seminars</td><td>Yes!</td><td>Open house</td></tr>
+<tr><td>2025-11-03 17:20:06</td><td>M028</td><td>Aerospace Engineering</td><td>Nuclear Engineering</td><td>Career Seminars</td><td>Yes!</td><td>Friend/Professor</td></tr>
+<tr><td>2025-11-08 18:25:30</td><td>M006</td><td>Chemical Engineering</td><td></td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Looking through student orgs</td></tr>
+<tr><td>2026-01-21 19:51:47</td><td>M031</td><td>Electrical Engineering</td><td>Nuclear Engineering</td><td>Social Mixers</td><td>Yes!</td><td>Student Involvement Fair</td></tr>
+<tr><td>2026-02-01 18:40:14</td><td>M015</td><td>Physics</td><td>Nuclear Engineering</td><td>Social Mixers</td><td>Yes!</td><td>Social media</td></tr>
+<tr><td>2026-02-09 20:52:04</td><td>M020</td><td>Nuclear Engineering PhD</td><td></td><td>Social Mixers</td><td>Yes!</td><td>Social media</td></tr>
+<tr><td>2026-02-10 16:02:12</td><td>M017</td><td>Physics</td><td>Nuclear Engineering;Math</td><td>Social Mixers</td><td>Yes!</td><td>Social media</td></tr>
+<tr><td>2026-02-28 19:44:36</td><td>M041</td><td>Electrical Engineering;Economics</td><td>Nuclear Engineering</td><td>Academic Seminars &amp; Guest speakers from the industry</td><td>Yes!</td><td>Social media</td></tr>
+<tr><td>2026-03-01 14:43:36</td><td>M045</td><td>Chemical Engineering</td><td>Nuclear Engineering</td><td>Not too sure!</td><td>Yes!</td><td>Social media</td></tr>
+</tbody>
+</table>
+
+<h2 id="openmc-interest-form">ANS OpenMC Workshop Interest Form (cleaned, pseudonymized)</h2>
+<table id="openmc-interest-form-table" border="1">
+<caption>ANS OpenMC Workshop Interest Form (cleaned, pseudonymized)</caption>
+<thead><tr><th>Timestamp</th><th>Member ID</th><th>Affiliation</th><th>OpenMC Experience Level</th><th>Terms Accepted</th><th>Referral Source</th><th>Event Name</th><th>Event Date</th></tr></thead>
+<tbody>
+<tr><td>2026-02-28 12:34:51</td><td>M041</td><td>Undergraduate Student</td><td>I&#x27;ve never used OpenMC</td><td>I accept these terms</td><td>ANS calendar</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-02 07:53:07</td><td>M022</td><td>Graduate Student</td><td>I&#x27;ve used it once or twice</td><td>I accept these terms</td><td>Monthly newsletter</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-08 13:08:07</td><td>M064</td><td>Graduate Student</td><td>I&#x27;ve used it once or twice</td><td>I accept these terms</td><td>Monthly newsletter</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-08 15:32:12</td><td>M002</td><td>Undergraduate Student</td><td>I&#x27;ve used it in a project or research</td><td>I accept these terms</td><td>ANS calendar</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-20 14:54:50</td><td>M036</td><td>Undergraduate Student</td><td>I&#x27;ve never used OpenMC</td><td>I accept these terms</td><td>N / A.</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-20 15:26:30</td><td>M035</td><td>Undergraduate Student</td><td>I&#x27;ve never used OpenMC</td><td>I accept these terms</td><td>Friend is a part of ANS</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-24 20:14:11</td><td>M014</td><td>Undergraduate Student</td><td>I&#x27;ve never used OpenMC</td><td>I accept these terms</td><td>ANS event reminder email</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-24 20:36:09</td><td>M056</td><td>Graduate Student</td><td>I&#x27;ve never used OpenMC</td><td>I accept these terms</td><td>ANS event reminder email</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-24 22:39:37</td><td>M024</td><td>Graduate Student</td><td>I&#x27;ve used it once or twice</td><td>I accept these terms</td><td>Flyers in Scott Lab/CBEC</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-25 10:35:55</td><td>M055</td><td>Undergraduate Student</td><td>I&#x27;ve never used OpenMC</td><td>I accept these terms</td><td>ANS event reminder email</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-25 15:09:24</td><td>M011</td><td>Undergraduate Student</td><td>I&#x27;ve never used OpenMC</td><td>I accept these terms</td><td>ANS event reminder email</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+<tr><td>2026-03-25 16:10:54</td><td>M041</td><td>Undergraduate Student</td><td>I&#x27;ve never used OpenMC</td><td>I accept these terms</td><td>Monthly newsletter;Social media</td><td>OpenMC Workshop</td><td>2026-03-25</td></tr>
+</tbody>
+</table>
+
+<h2 id="davisbesse-survey">Pre-Tour Survey for Davis Besse (cleaned, pseudonymized)</h2>
+<table id="davisbesse-survey-table" border="1">
+<caption>Pre-Tour Survey for Davis Besse (cleaned, pseudonymized)</caption>
+<thead><tr><th>Timestamp</th><th>Member ID</th><th>Major</th><th>Minor</th><th>Self-Rated Knowledge (1-5)</th><th>Q - Purpose of Water in Reactor</th><th>Q - PWR vs BWR Differences</th><th>Q - Max Annual Radiation Dose</th><th>Q - Spent Fuel Handling</th><th>Q - Security Test Frequency</th><th>Q - Power Output Control Method</th><th>Q - Refueling Outage Frequency/Length</th><th>Q - Career Paths</th><th>Q - Fuel Chemical Formula</th><th>Most Excited to See</th><th>Event Name</th><th>Event Date</th></tr></thead>
+<tbody>
+<tr><td>2025-11-06 09:06:33</td><td>M021</td><td>Mechanical Engineering</td><td></td><td>3 (Proficient)</td><td>Cooling </td><td>I have no idea </td><td>I have no idea </td><td>Stored away </td><td>No idea </td><td>I do not know </td><td>I have no idea </td><td>Engineers</td><td>I have no idea </td><td>The scale of the towers I’ve never seen one in person </td><td>Davis Besse Tour</td><td>2025-11-06</td></tr>
+<tr><td>2025-11-06 09:08:17</td><td>M014</td><td>Chemical Engineering;Engineering Physics</td><td></td><td>3 (Proficient)</td><td>Moderator/coolant</td><td>PWR is pressurized more</td><td>0.2 sievert </td><td>Kept at nuclear plant</td><td>Idk</td><td>Control rod</td><td>Every three years for like a month</td><td>Plant operator</td><td>UO2</td><td>The pressurized vessel.</td><td>Davis Besse Tour</td><td>2025-11-06</td></tr>
+<tr><td>2025-11-06 09:09:36</td><td>M044</td><td>Chemical Engineering</td><td></td><td>1 (Beginner)</td><td>Transferring the heat and running the turbine</td><td>In PWR, the water remains in a closed loop</td><td>A little</td><td>Encased in concrete and kept on site</td><td>Weekly</td><td>Boron concentration to absorb the neutrons</td><td>Idk</td><td>Maintenance, engineering, construction.</td><td>ZiUr</td><td>The reactor </td><td>Davis Besse Tour</td><td>2025-11-06</td></tr>
+<tr><td>2025-11-06 09:10:56</td><td>M026</td><td>Nuclear Engineering</td><td></td><td>3 (Proficient)</td><td>Coolant, shielding, moderator</td><td>PWRs are pressurized, no boiling to transfer heat, BWRs let the water turn to steam to power turbine</td><td>2 mrem</td><td>It gets stored in a pool short term, then gets moved to long term storage, never leaves the site of the reactor </td><td>A lot</td><td>Adjusting criticality with control rods and poison</td><td>Once every 2 years, lasts a month or two</td><td>It’s very multidisciplinary, more career paths are emerging with the wave of next-gen reactors</td><td>UO2</td><td>I hope we get to see the control room</td><td>Davis Besse Tour</td><td>2025-11-06</td></tr>
+<tr><td>2025-11-06 09:13:09</td><td>M023</td><td>Mechanical Engineering</td><td>Robotics and Automation</td><td>1 (Beginner)</td><td>To transfer heat &amp; absorb neutrons</td><td>PWR have 2 chambers and are pressurized </td><td>Death </td><td>It is encased in concrete and thrown in a deep hole</td><td>Bi-weekly</td><td>Adding a absorber (like boron), a reflector, or inserter/removing control rods</td><td>Every 2 years, it lasts 3 days</td><td>Nuclear system designer, nuclear system technician</td><td>Uranium</td><td>The blue glow of the reactor starting </td><td>Davis Besse Tour</td><td>2025-11-06</td></tr>
+<tr><td>2025-11-06 09:16:24</td><td>M051</td><td>Nuclear engineering </td><td></td><td>2 (Intermediate)</td><td>Cool the core and slow neutrons so the 235U absorption cross section is larger (moderator)</td><td>PWRs are pressurized to prevent the water by the core from boiling. This requires a secondary coolant loop, whose water can boil, which BWRs don’t have since they don’t try to prevent boiling in the primary loop.</td><td>5mrem</td><td>Put into a pool to cool for a few years. Then removed and put into a cement casket and stored on-site for “temporary” storage. In theory, there will be permanent storage facilities or recycling capabilities that the federal government has yet to provide.</td><td>Weekly is my guess</td><td>By changing how deep into the core the control rods are. Deeper will lead to less power output.</td><td>I think every 2-3 years. Typically lasts a month.</td><td>Nuclear safety analysis, reactor or core engineering, plant operations </td><td>UO2?</td><td>The large scale of the reactor itself.  Only have ever seen smaller research reactors. Also will be neat to see plant operators.</td><td>Davis Besse Tour</td><td>2025-11-06</td></tr>
+</tbody>
+</table>
+
+</body>
+</html>
